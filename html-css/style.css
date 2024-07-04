@@ -1,3 +1,47 @@
+/* base */
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background: #eee;
+  background: #eee;
+  margin: 0;
+}
+
+/* grid */
+/* 親要素を指定 */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  padding: 5px;
+}
+
+.grid-4 .grid-item {
+  width: 25%;
+}
+.grid-2 .grid-item {
+  width: 50%;
+}
+.grid-6 .grid-item {
+  width: 16.6%;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-2 .grid-item,
+  .grid-4 .grid-item,
+  .grid-6 .grid-item {
+    width: 100%;
+  }
+}
+
+.block {
+  display: block;
+  background: rgb(123, 120, 122);
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  border: 2px solid rgb(43, 41, 41);
 }
