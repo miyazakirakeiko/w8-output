@@ -6,6 +6,11 @@
 body {
   background: #eee;
   margin: 0;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
 }
 
 /* grid */
@@ -59,17 +64,21 @@ body {
   color: #000;
   top: 50%;
   left: 50%;
-  margin: 40px;
+  margin: 20px;
   /* transform: translate(-50%, -50%); */
   box-sizing: border-box;
   place-items: center;
 }
 
-.h1 {
-  margin: 0;
-  padding: 0 0 20px;
+.loginBox form {
+  padding: 20px; /* フォーム全体に余白を追加 */
+}
+
+.loginBox h1 {
+  margin: 0px;
+  padding: 20px 0 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .loginBox p {
@@ -100,7 +109,7 @@ input[type="password"] {
   background: #fb2525;
   color: #fff;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .loginBox input[type="submit"]:hover {
